@@ -1,0 +1,98 @@
+/* ========== 상단영역 ========== */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+header .wrap {
+  
+}
+
+header nav {
+  height: 80px;
+  align-items: center;
+}
+
+header h1 {
+  
+}
+
+header h1 a {
+  
+  background-image: url(../img/logo_1.png);
+  /*! font-size: 0; */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* header h1 a img {
+  
+} */
+
+
+header .gnb {
+  text-align: center;
+  height: 100%;
+}
+
+header .gnb > li {
+}
+
+header .gnb > li > a {
+  padding: 0 40px;
+  height: calc(100% - 2px);
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  border-bottom: 5px solid transparent;
+}
+
+header .gnb ul{
+  height: 270px;
+ margin-top: 20px;
+  line-height: 40px;
+  /*! opacity: 0; */
+  visibility: hidden;
+}
+
+header .gnb ul li {
+}
+
+header .gnb ul li a {
+  
+}
+
+/* 기타메뉴 */
+header .etc {
+  
+}
+
+header .etc li {
+  
+  position: relative;
+}
+
+header .etc li a {
+  padding: 0 5px;
+  color: white;
+  transition: 0.3s;
+}
+header .etc li:nth-child(2)::before{
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  position: absolute;
+  left: -1px;
+  top: calc(50% - 1.5px);
+}
+
+header .etc li a:hover{
+  color: #2b83c4;
+}
+
+
+

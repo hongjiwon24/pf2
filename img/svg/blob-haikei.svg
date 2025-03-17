@@ -1,0 +1,20 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <rect x="0" y="0" width="900" height="600" fill="#7992b9"></rect>
+  <g transform="translate(483.16248453001253 264.1886954317109)">
+    <path d="M136.9 -132.1C172.9 -100.9 194.4 -50.4 193.3 -1.2C192.1 48.1 168.2 96.2 132.2 142.5C96.2 188.8 48.1 233.4 -10 243.4C-68.1 253.5 -136.2 228.9 -186.2 182.6C-236.2 136.2 -268.1 68.1 -257.7 10.4C-247.4 -47.4 -194.8 -94.8 -144.8 -126C-94.8 -157.3 -47.4 -172.4 1.5 -173.9C50.4 -175.4 100.9 -163.4 136.9 -132.1" fill="#e8bb78">
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1;1.1;1"
+        dur="5s"
+        repeatCount="indefinite" />
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0;10;-10;0"
+        dur="10s"
+        additive="sum"
+        repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

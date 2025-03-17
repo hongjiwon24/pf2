@@ -1,0 +1,132 @@
+/* ========== 타이틀영역 ========== */
+#title {
+  background-color: #7992b9;
+  height: 100%;display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../img/svg/blob-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#title .wrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  z-index: 1;
+}
+
+#title h2.h1 {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 20px;
+  align-self: end;
+}
+
+#title p.titlep {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#title nav {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+#title ul {}
+
+#title ul li {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  /*! border: 1px solid #000; */
+  margin: 40px;
+}
+
+#title ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#title ul li a h2.menu {
+  
+  color: #fff;
+}
+
+#title ul li a p.sm {
+  display: none;
+}
+
+#title video {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#title video source {
+    
+}
+
+#title::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/svg/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -90px;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+}
+
+#title ul li a::before{
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateY(-4px);
+}
+#title ul li:nth-child(1) a::before{
+  background-image: url(../img/svg/buildings_icon.svg);
+}
+#title ul li:nth-child(2) a::before{
+  background-image: url(../img/svg/graph_increase_icon.svg);
+}
+#title ul li:nth-child(3) a::before{
+  background-image: url(../img/svg/scale_icon.svg);
+}
+#title ul li:nth-child(4) a::before{
+  background-image: url(../img/svg/id_card_icon.svg);
+}
+#title ul li a::after{
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-image: url(../img/svg/chevron-up-solid.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
+}
+
+
+/* 마우스 올렸을 때 색상변환 */
+#title ul li:hover{
+  background-color: #2055b9;
+}
